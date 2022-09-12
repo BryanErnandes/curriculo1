@@ -18,13 +18,12 @@ export default function App() {
               <Text style={styles.headerText3}>Aula desenvolvimento para front-End Mobíle</Text>
           </View>
         </View>
-          <View style={styles.main}>
-            <Text style={styles.mainText}>E-mail</Text>
-            <Text style={styles.mainText}>Endereço</Text>
-            <Text style={styles.mainText}>Telefone</Text>
-            <Text style={styles.mainText}>Data de nascimento</Text>
-            <Text style={styles.mainText}>Nacionalidade</Text>
-            <Text style={styles.mainText}>Link</Text>
+          <View style={styles.info}>
+            <Text style={styles.infoText}>E-mail: <Text style={styles.secondText}>bryan@gmail.com</Text></Text>
+            <Text style={styles.infoText}>Endereço: <Text style={styles.secondText}>Rua Olive</Text></Text>
+            <Text style={styles.infoText}>Telefone: <Text style={styles.secondText}>00 000.0000.00</Text></Text>
+            <Text style={styles.infoText}>Data de nascimento: <Text style={styles.secondText}>00/00/00</Text></Text>
+            <Text style={styles.infoText}>Nacionalidade: <Text style={styles.secondText}>Brasil</Text></Text>
           </View>
       </View>
     </SafeAreaView>
@@ -41,6 +40,7 @@ const styles = StyleSheet.create({
     borderTopWidth: 1,
     borderBottomWidth: 1,
     borderColor: '#00000',
+    marginTop: 4,
     padding: 5
   },
   img: {
@@ -55,27 +55,32 @@ const styles = StyleSheet.create({
   },
   headerText: {
    fontSize: 20,
-   color: '#290BF9',
+   color: '#F52622',
    fontWeight: 'bold'
   },
   headerText2: {
     fontSize: 20,
-    color: '#290BF9',
+    color: '#F52622',
     fontWeight: 'bold'
   },
   headerText3: {
     fontSize: 20,
-    color:'#290BF9',
+    color:'#F52622',
     fontWeight: 'bold'
   },
-  main: {
-    marginTop: 3,
-    marginLeft: 7
+  info: {
+    marginTop: 5,
+    borderTopWidth: 1,
+    borderBottomWidth: 1,
+    borderColor: '#00000',
   },
-  mainText: {
+  infoText: {
     fontSize: 20,
     padding: 1,
     color: '#F52622',
     fontWeight: 'bold'
+  },
+  secondText: {
+    color: '#1807E0'
   }
 });
