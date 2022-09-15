@@ -1,60 +1,58 @@
-import { SafeAreaView, StyleSheet, Text, View, StatusBar, Image } from 'react-native';
+import { SafeAreaView, StyleSheet, Text, View, StatusBar, Image, ScrollView } from 'react-native';
 
 export default function App() {
   return (
-    <SafeAreaView>
-      <View style={styles.container}>
-        <StatusBar backgroundColor='#050005' />
-        
-        <View style={styles.header}>
-          <View style={styles.img}>
-            <Image
-              style={styles.logo}
-              source={require('./assets/perfil.jpg')}
-            />
+    <SafeAreaView style={styles.container}>
+          <StatusBar backgroundColor='#050005' />
+          
+          <View style={styles.header}>
+            <View style={styles.img}>
+              <Image
+                style={styles.logo}
+                source={require('./assets/perfil.jpg')}
+              />
+            </View>
+            <View style={styles.text}>
+              <Text style={styles.headerText}>Bryan Willians O Ernandes</Text>
+              <Text style={styles.headerText2}>Aluno</Text>
+              <Text style={styles.headerText3}>Aula desenvolvimento para front-End Mobíle</Text>
+            </View>
           </View>
-          <View style={styles.text}>
-            <Text style={styles.headerText}>Bryan Willians O Ernandes</Text>
-            <Text style={styles.headerText2}>Aluno</Text>
-            <Text style={styles.headerText3}>Aula desenvolvimento para front-End Mobíle</Text>
+
+          <View style={styles.info}>
+            <Text style={styles.infoText}>E-mail: <Text style={styles.secondText}>bryan@gmail.com</Text></Text>
+            <Text style={styles.infoText}>Endereço: <Text style={styles.secondText}>Rua Oliver</Text></Text>
+            <Text style={styles.infoText}>Telefone: <Text style={styles.secondText}>00 000.0000.00</Text></Text>
+            <Text style={styles.infoText}>Data de nascimento: <Text style={styles.secondText}>00/00/00</Text></Text>
+            <Text style={styles.infoText}>Nacionalidade: <Text style={styles.secondText}>Brasil</Text></Text>
           </View>
-        </View>
 
-        <View style={styles.info}>
-          <Text style={styles.infoText}>E-mail: <Text style={styles.secondText}>bryan@gmail.com</Text></Text>
-          <Text style={styles.infoText}>Endereço: <Text style={styles.secondText}>Rua Oliver</Text></Text>
-          <Text style={styles.infoText}>Telefone: <Text style={styles.secondText}>00 000.0000.00</Text></Text>
-          <Text style={styles.infoText}>Data de nascimento: <Text style={styles.secondText}>00/00/00</Text></Text>
-          <Text style={styles.infoText}>Nacionalidade: <Text style={styles.secondText}>Brasil</Text></Text>
-        </View>
-
-        <View style={styles.exp}>
-          <Text style={styles.textExp}>Experiências</Text>
-        </View>
-
-        <View style={styles.expMain}>
           <View style={styles.exp}>
-            <Text style={styles.expText}>Atualmente</Text>
+            <Text style={styles.textExp}>Experiências</Text>
           </View>
+
+          <View style={styles.expMain}>
+            <View style={styles.exp}>
+              <Text style={styles.expText}>Atualmente</Text>
+            </View>
+            <View>
+              <Text style={styles.expInfo}>técnico Informatico</Text>
+              <Text style={styles.expInfo}>Lorem Ipsum is simply </Text>
+              <Text style={styles.expInfo}>Lorem Ipsum has been</Text>
+            </View>
+          </View>
+
           <View>
-            <Text style={styles.expInfo}>técnico Informatico</Text>
-            <Text style={styles.expInfo}>Lorem Ipsum is simply </Text> 
-            <Text style={styles.expInfo}>Lorem Ipsum has been</Text>
+            <View  style={styles.form}>
+              <Text  style={styles.formacao}>Formação</Text>
+            </View>
+        
+            <View style={styles.formacaoMain}>
+              <Text style={styles.formacaoInfo}>Técnico Informatico para Internet</Text>
+              <Text style={styles.formacaoInfo}>2021 - 2022</Text>
+            </View>
           </View>
-        </View>
 
-        <View>
-          <View  style={styles.form}>
-            <Text  style={styles.formacao}>Formação</Text>
-          </View>
-
-          <View style={styles.formacaoMain}>
-            <Text style={styles.formacaoInfo}>Técnico Informatico para Internet</Text>
-            <Text style={styles.formacaoInfo}>2021 - 2022</Text>
-          </View>
-        </View>
-
-      </View>
     </SafeAreaView>
   );
 }
