@@ -5,6 +5,7 @@ export default function App() {
     <SafeAreaView>
       <View style={styles.container}>
         <StatusBar backgroundColor='#050005' />
+        
         <View style={styles.header}>
           <View style={styles.img}>
             <Image
@@ -41,15 +42,18 @@ export default function App() {
             <Text style={styles.expInfo}>Lorem Ipsum has been</Text>
           </View>
         </View>
+
         <View>
           <View  style={styles.form}>
             <Text  style={styles.formacao}>Formação</Text>
           </View>
+
           <View style={styles.formacaoMain}>
             <Text style={styles.formacaoInfo}>Técnico Informatico para Internet</Text>
             <Text style={styles.formacaoInfo}>2021 - 2022</Text>
           </View>
         </View>
+
       </View>
     </SafeAreaView>
   );
